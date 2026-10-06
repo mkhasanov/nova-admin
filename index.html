@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaAdmin</title>
+    <meta
+      name="description"
+      content="NovaAdmin premium admin dashboard template"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwUEQ1UIQm6Z8D8I0/QM3hP8S8aT1l6L4oA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">
+            <img src="assets/logo.svg" alt="NovaAdmin logo" />
+          </div>
+          <div class="brand-name">NovaAdmin</div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+          <div class="nav-section-title">Overview</div>
+          <a class="nav-item active" href="#/dashboard" data-route="dashboard">
+            <i class="fa-solid fa-table-columns"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <div class="nav-section-title">Management</div>
+          <a class="nav-item" href="#/users" data-route="users">
+            <i class="fa-solid fa-users"></i>
+            <span>Users</span>
+          </a>
+          <a class="nav-item" href="#/products" data-route="products">
+            <i class="fa-solid fa-box-open"></i>
+            <span>Products</span>
+          </a>
+          <a class="nav-item" href="#/orders" data-route="orders">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Orders</span>
+          </a>
+          <a class="nav-item" href="#/customers" data-route="customers">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Customers</span>
+          </a>
+
+          <div class="nav-section-title">Analytics</div>
+          <a class="nav-item" href="#/analytics" data-route="analytics">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Analytics</span>
+          </a>
+          <a class="nav-item" href="#/reports" data-route="reports">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Reports</span>
+          </a>
+
+          <div class="nav-section-title">System</div>
+          <a class="nav-item" href="#/notifications" data-route="notifications">
+            <i class="fa-solid fa-bell"></i>
+            <span>Notifications</span>
+          </a>
+          <a class="nav-item" href="#/settings" data-route="settings">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-user">
+          <div class="user-avatar small">AM</div>
+          <div class="user-meta">
+            <strong id="sidebar-user-name">Alicia Morgan</strong>
+            <span>Product Lead</span>
+          </div>
+          <button class="icon-button" type="button" id="sidebar-logout-btn" aria-label="Logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+      </aside>
+
+      <div class="app-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button mobile-only" id="sidebar-toggle" type="button" aria-label="Toggle sidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="search-shell">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="global-search" type="search" placeholder="Search anything" aria-label="Search" />
+            </div>
+          </div>
+
+          <div class="topbar-actions">
+            <div class="topbar-action notification-wrap">
+              <button class="icon-button" type="button" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+              <span class="notification-badge">6</span>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <div class="user-menu-wrap">
+              <button class="user-menu" type="button" id="user-menu-button">
+                <div class="user-avatar">AM</div>
+                <div class="user-labels">
+                  <strong>Alicia Morgan</strong>
+                  <span>admin@example.com</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-menu hidden" id="user-menu-dropdown">
+                <a href="#/profile">Profile</a>
+                <a href="#/settings">Settings</a>
+                <button type="button" id="logout-btn">Logout</button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main id="main-content" class="main-content" aria-live="polite"></main>
+      </div>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

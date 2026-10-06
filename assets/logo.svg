@@ -1,0 +1,14 @@
+<svg width="176" height="48" viewBox="0 0 176 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="14" fill="url(#paint0_linear_1_2)"/>
+  <path d="M15 30V18.5H21.5C25.0899 18.5 27.5 20.9101 27.5 24.5C27.5 28.0899 25.0899 30.5 21.5 30.5H15ZM18.5 27H21.25C22.7688 27 24 25.7688 24 24.25C24 22.7312 22.7688 21.5 21.25 21.5H18.5V27Z" fill="white"/>
+  <path d="M28 18.5H34.2L38.5 25.3V18.5H42V30.5H35.8L31.5 23.7V30.5H28V18.5Z" fill="white"/>
+  <circle cx="34" cy="13.5" r="3" fill="#B9C8FF"/>
+  <path d="M54 17C54 15.3431 55.3431 14 57 14H67C68.6569 14 70 15.3431 70 17V20.5C70 22.1569 68.6569 23.5 67 23.5H57C55.3431 23.5 54 22.1569 54 20.5V17Z" fill="#7C6BFF" fill-opacity="0.18"/>
+  <text x="82" y="30" fill="#E8ECFF" font-family="Arial, sans-serif" font-weight="700" font-size="23">NovaAdmin</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D5EFC"/>
+      <stop offset="1" stop-color="#3FC7FF"/>
+    </linearGradient>
+  </defs>
+</svg>
